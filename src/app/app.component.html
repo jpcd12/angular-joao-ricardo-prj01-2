@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" [routerLink]="['/']">{{name}}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Disciplinas
+        </a>
+        <div class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" [routerLink]="['disciplinas']">1º Ciclo</a>
+          <a class="dropdown-item" [routerLink]="['/disciplinas2']">2º Ciclo</a>
+          <a class="dropdown-item" [routerLink]="['/disciplinas3']">3º Ciclo</a>
+          <a class="dropdown-item" [routerLink]="['/disciplinas4']">4º Ciclo</a>
+          <a class="dropdown-item" [routerLink]="['/disciplinas5']">5º Ciclo</a>
+          <a class="dropdown-item" [routerLink]="['/disciplinas6']">6º Ciclo</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/disciplinasdetalhes']">Detalhes sobre a Disciplina</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/medias']">Média dos Alunos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['']">Sobre</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
